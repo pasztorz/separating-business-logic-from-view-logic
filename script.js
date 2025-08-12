@@ -1,4 +1,4 @@
-const animals = [
+/*const animals = [
   { emoji: "🦒", species: "Giraffa camelopardalis", name: "Bruce", size: 'large' },
   { emoji: "🐘", species: "Elephas Maximus", name: "Tommy", size: 'large' },
   { emoji: "🐁", species: "Mus musculus", name: "Walter", size: 'tiny' }
@@ -24,8 +24,9 @@ for (const animal of animals) {
     console.error(`Unknown animal size: ${animal.size}`)
   }
 }
+*/
 
-/*
+
 // Filter animals (business)
 function filterBySize(items, size) {
   const filtered = [];
@@ -53,7 +54,7 @@ function createAnimalElement(animal) {
 
 // Display the list of animals (view)
 function displayAnimals(parent, animals) {
-  for(animal of animals) {
+  for(let animal of animals) {
     const animalElement = createAnimalElement(animal)
     parent.appendChild(animalElement)
   }
@@ -73,4 +74,3 @@ displayAnimals(tinyAnimalsElement, tinyAnimals)
 const largeAnimals = filterBySize(animals, 'large');
 const largeAnimalsElement = document.getElementById('large-animals');
 displayAnimals(largeAnimalsElement, largeAnimals);
-*/
