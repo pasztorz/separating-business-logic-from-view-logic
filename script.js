@@ -54,7 +54,7 @@ function createAnimalElement(animal) {
 
 // Display the list of animals (view)
 function displayAnimals(parent, animals) {
-  for(let animal of animals) {
+  for(const animal of animals) {
     const animalElement = createAnimalElement(animal)
     parent.appendChild(animalElement)
   }
